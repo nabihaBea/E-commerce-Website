@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ecomerce</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	
+
+</head>
+<body>
+<?php
+if (isset($_POST['Subscribe'])) {
+    $to_email = "receiver@example.com"; // Replace with the email address where you want to receive the subscription emails
+    $subject = "New Subscriber";
+    $from_email = $_POST['email_address'];
+    $message = "New subscriber email: " . $from_email;
+    $headers = "From: $from_email";
+
+    // Attempt to send the email
+    if (mail($to_email, $subject, $message, $headers)) {
+        echo "Email sent successfully!";
+    } else {
+        echo "Failed to send the email. Please try again later.";
+    }
+}
+?>
+<div class="top_bar">
+	<a href="file:///D:/web/ecommerce/website/ecomerce.html#slide-1"><img src="vape.jpg" alt="logo" class="logo"></a> 
+	  <div class="top_list">
+	  	<ul style="float: right;" class="list">
+	  		<a href="file:///D:/web/ecommerce/website/aboutus.html" class="home_pg">About us</a>
+	  		<a href="file:///D:/web/ecommerce/website/contactus.html" class="about_pg">Contact us</a>
+	  		<a href="file:///D:/web/ecommerce/website/login.html" class="contact_pg">Log In</a>
+	  		<!-- <input type="search" name="search" placeholder="Search" style="padding: 0.1em;margin-bottom: 0.5em;">-->
+	  	</ul>
+	  </div>
+</div>
+<div id="list_under">
+<ul id="list_second">
+	<a href="#kit" id="kit">Vape Kit</a>
+	<a href="liquid" id="liquid">E-Liquids</a>
+	<a href="pods" id="pod">Vape Pods</a>
+	<a href="dis" id="dispo">Disposable Vape</a>
+	<a href="tank" id="tank">Tanks</a>
+	<a href="mod" id="mod">Mods</a>
+	<a href="coil" id="coil">Coils</a>
+	<a href="assc" id="assc">Accessories</a>
+	<a href="new" id="new">New In</a>
+	<a href="deals" id="deals">Vape Deals</a>
+</ul>
+</div>
+<div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="slide_one.png" class="slide" width="1000" height="300" />
+        <img src="slide_one.png" class="slide" width="1000" height="300" />
+        <img src="slide_one.png" class="slide" width="1000" height="300" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </div>
+<div id="text_one">
+	<p style="text-align: center; margin-top: 25px;font-size: 20px;font-family: sans-serif; "><b>VAPE 360 UK™ - ONLINE VAPE STORE</b></p>
+
+     <p style="text-align: center; margin-top: 5px;font-family: sans-serif; font-size: 14px;">Welcome to Vape 360 Uk. Established in 2015, we're the Uk's largest online vape store offering the largest selection of 
+     <a href="vape kits" id="links">vape kits</a>, liquids, disposable vapes, and vaping alternatives in the Uk.</p>
+
+</div>
+
+<div class="table_one">
+<table id="table_one">
+	<tr>
+	<th><img src="1.png" alt="product"></th>
+	<th><img src="2.png" alt="product"></th>
+	<th><img src="3.png" alt="product"></th>
+	<th><img src="4.png" alt="product"></th>
+	<th><img src="5.png" alt="product"></th>
+</tr>
+<tr>
+	<td>
+		<a href="#detail">VooPoo Doric Q Pod Kit</a>
+	</td>
+  <td><a href="#detail">Freemax Galex Nano Pod Kit</a></td>
+  <td><a href="#detail">Freemax Galex Pod Vape Kit</a></td>
+  <td><a href="#detail">VooPoo Vinci 3 Vape Kit</a></td>
+  	<td><a href="#detail">OXVA Xlim Pro Pod Kit</a></td>
+</tr>
+
+</table>
+  <div id="table_two">
+  	<table id="table_two">
+	<tr>
+	<th id="price" style="padding-left: 20px;">£12.95</th>
+	<th id="price" style="padding-left:210px">£21.95</th>
+	<th id="price" style="padding-left:230px">£21.95</th>
+	<th id="price" style="padding-left:215px">£27.99</th>
+	<th id="price" style="padding-left:215px">£24.95</th>
+</tr>
+</table>
+</div>
+</div>
+
+<p style="font-family: sans-serif; font-size:20px;text-align:center; padding-top: 40px;"><b>Disposable Vape</b></p>
+<p style="font-family:sans-serif;font-size: 14px;text-align: center;">Great Selection Of Some Of The Best Disposable Vape Kits In Uk</p>
+
+<div>
+<table id="table_three">
+	<tr>
+	<th><img src="6.png" alt="product"></th>
+	<th><img src="7.png" alt="product"></th>
+	<th><img src="8.png" alt="product"></th>
+	<th><img src="9.png" alt="product"></th>
+	<th><img src="10.png" alt="product"></th>
+</tr>
+<tr>
+	<td>
+		<a href="#detail">Lost Mary BM600 Disposable Vape</a>
+	</td>
+  <td><a href="#detail">Lost Mary AM600 Disposable Vape Kit</a></td>
+  <td><a href="#detail">Crystal Bar Disposable Vape Kit</a></td>
+  <td><a href="#detail">Bloody Mary BM600 Vape</a></td>
+  	<td><a href="#detail">SKY Crystal Bar Pro 600 Puffs</a></td>
+</tr>
+
+</table>
+  <div id="table_two">
+  	<table id="table_two">
+	<tr>
+	<th id="price" style="padding-left: 20px;">£12.95</th>
+	<th id="price" style="padding-left:210px">£21.95</th>
+	<th id="price" style="padding-left:230px">£21.95</th>
+	<th id="price" style="padding-left:215px">£27.99</th>
+	<th id="price" style="padding-left:215px">£24.95</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div>
+	<p style="padding-left:20px;font-size: 25px;font-family: sans-serif; padding-top:40px"><b>Our Customers Love Us!</b></p>
+	<img src="11.png" alt="review">
+	<img src="12.png" alt="review" style="display: inline; padding-left:15px">
+	<img src="13.png" alt="review" style="display:inline; padding-left:15px">
+    <img src="14.png" alt="review" style="display:inline; padding-left: 20px;">
+</div>
+
+<div class="searchs">
+	<div class="save">
+		<h1 style="color: white;">Sign up & Save 10%</h1>
+		<p style="color:white;">Sign up to our newsletter today and receive discount on your first order + exclusive offers.</p>
+	</div>
+	<div class="email">
+		<input type="input" name="email address" placeholder="Email Address">
+		<button type="Submit" value="Subscribe" name="Subscribe"><b> Subscribe </b></button>
+	</div>
+</div>
+
+<div class="footer">
+  <div class="column_1">
+  	<h3>Useful Links</h3>
+  	<a href="file:///D:/web/ecommerce/website/aboutus.html">About</a>
+  	<a href="file:///D:/web/ecommerce/website/contactus.html">Contact Us</a>
+  	<a href="#">Careers</a>
+  </div>
+  <div class="column_2">
+  	 <h3>Customer Service</h3>
+  	 <a href="#">Privacy Policy</a>
+  	 <a href="#">Refunds and Returns</a>
+  	 <a href="#">Terms and Condition</a>
+  	 <a href="#">Delivery Information</a>
+  </div>
+  <div class="column_3">
+  	<h3>Trending</h3>
+  	<a href="#">Dispodable Vape</a>
+  	<a href="#">Elf Bar</a>
+  	<a href="#">Geek Bar</a>
+  	<a href="#">All Products</a>
+  </div>
+</div>
+<hr>
+<div class="social">
+  <a href="https://www.facebook.com/"> <img  class= "facbook" src="f.png" alt="facbook"></a>
+
+  <a href="https://www.instagram.com/">	<img src="i.png" alt="facbook"></a>
+	 <a href="mailto:nabiha.writing@gmail.com"><img src="e.png" alt="facbook"></a>
+<div >
+	<p style="padding-left: 60%; padding-bottom: 10px;">Follow Vape 360 for giveaways and special promos</p>
+</div>
+</div>
+</body>
+</html>
